@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <model name="mossy_bark">
+      <static>true</static>
+      <pose>0 0 3.5 0 0 0</pose>
+      <link name="mossy_bark_link">
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1.0</mass>
+        </inertial>
+        <collision name="mossy_barkcollision">
+          <geometry>
+            <cylinder>
+              <radius>0.08</radius>
+              <length>1.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="mossy_barkvisual">
+          <geometry>
+            <cylinder>
+              <radius>0.08</radius>
+              <length>1.7</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>file:///root/ignition_textures/mossy_bark/materials/textures/Mossy_bark_02_2K_Base_Color.png</albedo_map>
+                <normal_map >file:///root/ignition_textures/mossy_bark/materials/textures/Mossy_bark_02_2K_Normal.png</normal_map>
+                <ambient_occlusion_map>file:///root/ignition_textures/mossy_bark/materials/textures/Mossy_bark_02_2K_AO.png</ambient_occlusion_map>
+                <roughness_map>file:///root/ignition_textures/mossy_bark/materials/textures/Mossy_bark_02_2K_Roughness.png</roughness_map>
+                <roughness>0.9</roughness>
+                <metalness_map>file:///root/ignition_textures/mossy_bark/materials/textures/Mossy_bark_02_2K_Height.png</metalness_map>
+                <metalness>0.9</metalness>
+              </metal>
+            </pbr>
+            <!-- fallback to classic if no PBR support-->
+            <script>
+              <uri>file:///root/ignition_textures/mossy_bark/materials/scripts</uri>
+              <uri>file:///root/ignition_textures/mossy_bark/materials/textures</uri>
+              <name>MossyBark/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+</sdf>

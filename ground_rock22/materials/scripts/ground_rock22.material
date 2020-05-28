@@ -1,0 +1,15 @@
+material GroundRock22/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Ground022_4K_Color.jpg
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

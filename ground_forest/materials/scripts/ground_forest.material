@@ -1,0 +1,15 @@
+material GroundForest/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture GroundForest003_COL_VAR1_3K.jpg
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

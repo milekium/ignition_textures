@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <model name="ground_rock">
+      <static>true</static>
+      <pose>0 0 3.5 0 0 0</pose>
+      <link name="ground_rock_link">
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1.0</mass>
+        </inertial>
+        <collision name="ground_rock_collision">
+          <geometry>
+            <mesh>
+              <uri>file:///root/ignition_textures/ground_rock/meshes/wall.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="ground_rock_visual">
+          <geometry>
+            <mesh>
+              <uri>file:///root/ignition_textures/ground_rock/meshes/wall.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <diffuse>0.8 0.8 0.8 1</diffuse>
+              <specular>0.6 0.6 0.6 1</specular>
+              <ambient>1.0 1.0 1.0</ambient>
+              <lighting>true</lighting>
+              <emissive>0 0 0 1</emissive>
+<!--               <shader type="pixel">
+                <normal_map>file:///root/ignition_textures/ground_rock/materials/textures/WallMedieval003_DISP_VAR1_3K.jpg</normal_map>
+              </shader> -->
+              <pbr>
+                <metal>
+                  <albedo_map>file:///root/ignition_textures/ground_rock/materials/textures/woodCrate_baseColor.png</albedo_map>
+                  <normal_map >file:///root/ignition_textures/ground_rock/materials/textures/woodCrate_norm_OGL.png</normal_map>
+                  <ambient_occlusion_map>file:///root/ignition_textures/ground_rock/materials/textures/woodCrate_AO.png</ambient_occlusion_map>
+                  <roughness_map>file:///root/ignition_textures/ground_rock/materials/textures/woodCrate_roughness.png</roughness_map>
+                  <roughness>0.5</roughness>
+                </metal>
+              </pbr>
+              <script>
+                <uri>file:///root/ignition_textures/ground_rock/materials/scripts</uri>
+                <uri>file:///root/ignition_textures/ground_rock/materials/textures</uri>
+                <name>GroundRock/Diffuse</name>
+            </script>
+            </material>
+        </visual>
+      </link>
+    </model>
+</sdf>

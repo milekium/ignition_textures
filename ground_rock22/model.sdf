@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <model name="ground_rock22">
+      <static>true</static>
+      <pose>0 0 3.5 0 0 0</pose>
+      <link name="ground_rock22_link">
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1.0</mass>
+        </inertial>
+        <collision name="ground_rock22collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="ground_rock22visual">
+          <geometry>
+            <mesh>
+              <uri>file:///root/ignition_textures/ground_rock22/meshes/terrain07.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>file:///root/ignition_textures/ground_rock22/materials/textures/grouduv.jpg</albedo_map>
+                <normal_map >file:///root/ignition_textures/ground_rock22/materials/textures/Ground022_4K_Normal.jpg</normal_map>
+                <ambient_occlusion_map>file:///root/ignition_textures/ground_rock22/materials/textures/Ground022_4K_AmbientOcclusion.jpg</ambient_occlusion_map>
+                <roughness_map>file:///root/ignition_textures/ground_rock22/materials/textures/Ground022_4K_Roughness.jpg</roughness_map>
+                <roughness>0.9</roughness>
+                <metalness_map>file:///root/ignition_textures/ground_rock22/materials/textures/Ground022_4K_Displacement.jpg</metalness_map>
+                <metalness>0.9</metalness>
+              </metal>
+            </pbr>
+            <!-- fallback to classic if no PBR support-->
+            <script>
+              <uri>file:///root/ignition_textures/ground_rock22/materials/scripts</uri>
+              <uri>file:///root/ignition_textures/ground_rock22/materials/textures</uri>
+              <name>GroundRock22/Diffuse</name>
+            </script>
+          </material> 
+        </visual>
+      </link>
+    </model>
+</sdf>

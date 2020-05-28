@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <model name="ground_forest">
+      <static>true</static>
+      <pose>0 0 3.5 0 0 0</pose>
+      <link name="ground_forest_link">
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1.0</mass>
+        </inertial>
+        <collision name="ground_forest_collision">
+          <geometry>
+            <box>
+              <size>3 3 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="ground_forest_visual">
+          <geometry>
+            <box>
+              <size>3 3 0.05</size>
+            </box>
+          </geometry>
+            <material>
+              <diffuse>1.0 1.0 1.0</diffuse>
+              <specular>1.0 1.0 1.0</specular>
+              <pbr>
+                <metal>
+                  <albedo_map>file:///root/ignition_textures/ground_forest/materials/textures/GroundForest003_COL_VAR1_3K.jpg</albedo_map>
+                  <normal_map>file:///root/ignition_textures/ground_forest/materials/textures/GroundForest003_NRM_3K.jpg</normal_map>
+<!--                   <metalness_map>file:///root/ignition_textures/ground_forest/materials/textures/rescue_randy_metalness.png</metalness_map> -->
+                  <roughness_map>file:///root/ignition_textures/ground_forest/materials/textures/GroundForest003_DISP_3K.jpg</roughness_map>
+                  <roughness>0.9</roughness>
+                </metal>
+              </pbr>
+              <!-- fallback to classic if no PBR support-->
+              <script>
+                <uri>file:///root/ignition_textures/ground_forest/materials/scripts</uri>
+                <uri>file:///root/ignition_textures/ground_forest/materials/textures</uri>
+                <name>GroundForest/Diffuse</name>
+              </script>
+            </material>
+        </visual>
+      </link>
+    </model>
+</sdf>

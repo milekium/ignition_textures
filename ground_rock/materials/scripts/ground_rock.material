@@ -1,0 +1,13 @@
+material GroundRock/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallMedieval003_COL_VAR1_3K.jpg
+      }
+    }
+  }
+}
