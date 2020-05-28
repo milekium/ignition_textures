@@ -1,4 +1,3 @@
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Ignition Textures
@@ -26,19 +25,19 @@ Collection of simple ignition models with textures, intended to be use as a simp
 ## About The Project
 ATT: PROJECT IS IN EARLY STATE, PLEASE EXPECT CONSTANT UPDATES AND CHANGES.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Protoros][product-screenshot]](https://protoros.com)
 
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+Ignition is part of the great [Ros](https://index.ros.org/doc/ros2/) (Robot Operation System) ecosystem. New releases of Ros as Ros2, come with new features and exiting capabilities for the robot development. Ignition is to be consider the new implementation of Gazebo for the world and robot simulation, this project is intended to explore the new features of ignition.  
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+Motivation:
+* Robot simulation makes robot development more fast and reliaveble. 
+* World simulation with high detials and non predictable interactions, makes the simulation more valuable.
+* World simulations and robot deployment can be fun :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+Of course, the goal of this project is to facilitate robot developers working with ros to test theirs robots in more complex and complete worlds, while reducing the time to develop this worlds.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgments.
+Some resources that I use for this project and may be helpful are listed in the acknowledgments.
 
 ### Built With
 Main tools used for building this project:
@@ -49,8 +48,7 @@ Main tools used for building this project:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an simple example if you are familiar with the ignition or gazebo work flow, for those with no previous experience, it is 
-recommended to read documentation in the official [page](https://ignitionrobotics.org/docs/citadel):
+This is an simple example if you are familiar with the ignition or gazebo work flow, for those with no previous experience, it is recommended to read documentation in the official [page](https://ignitionrobotics.org/docs/citadel):
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -74,7 +72,7 @@ ign gazebo ~/ign_ws/ignition_textures/textures_world.sdf
   -Optional
 Enter your log errors into the console with:
 ```sh
-ign gazebo ~/ign_ws/ignition_textures/textures_world.sdf
+ign gazebo ~/ign_ws/ignition_textures/textures_world.sdf  --verbose
 ```
 3. Load another model:
 For load different models, you need to edit the textures_world.sdf file to change the uri as:
@@ -89,11 +87,14 @@ to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+Here are some examples included in the project to show different textures applied to different objects:
+|Model Name| ""  | ""  | "" |  
+|:---:|:---:|:---:|:---:|
+| Ground Forest Texture | ![ ][texture1-screenshot] | ![ ][texture1-screenshot1] | ![ ][texture1-screenshot2] |
+| Ground Rock Texture | ![][texture2-screenshot] | ![][texture2-screenshot1] | ![][texture2-screenshot2] |
+| Another Groun Rock | ![][texture3-screenshot] | ![][texture3-screenshot1] | ![][texture3-screenshot2] |
+| Mossy Bark | ![][texture4-screenshot] | ![][texture4-screenshot1] | ![][texture4-screenshot2] |
+| Wood Case | ![][texture5-screenshot] | ![][texture5-screenshot1] | ![][texture5-screenshot2] |
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -145,4 +146,25 @@ Project Link: [https://github.com/milekium/ignition_textures](https://github.com
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/milekium
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: thumbnails/1.png
+
+[texture1-screenshot]: ground_forest/thumbnails/1.png
+[texture1-screenshot1]: ground_forest/thumbnails/2.png
+[texture1-screenshot2]: ground_forest/thumbnails/3.png
+
+[texture2-screenshot]: ground_rock/thumbnails/1.png
+[texture2-screenshot1]: ground_rock/thumbnails/2.png
+[texture2-screenshot2]: ground_rock/thumbnails/3.png
+
+[texture3-screenshot]: ground_rock22/thumbnails/1.png
+[texture3-screenshot1]: ground_rock22/thumbnails/2.png
+[texture3-screenshot2]: ground_rock22/thumbnails/3.png
+
+
+[texture4-screenshot]: mossy_bark/thumbnails/1.png
+[texture4-screenshot1]: mossy_bark/thumbnails/2.png
+[texture4-screenshot2]: mossy_bark/thumbnails/3.png
+
+[texture5-screenshot]: wood_case/thumbnails/1.png
+[texture5-screenshot1]: wood_case/thumbnails/2.png
+[texture5-screenshot2]: wood_case/thumbnails/3.png
